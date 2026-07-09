@@ -3,15 +3,20 @@
 <meta name="google-site-verification" content="kBa80ZLP44FQtJNqYWt9iHOs70eWZCNrCnafplpjJ00" />
     <title>Watch Repair & Customization|R&R watches</title>
     <style>
-        .body {
-            margin: 3;
-            background-color:#b6b7ba;
-            color:black;
+        /* ensure the page background applies to the whole document */
+        body {
+            background-color: #b6b7ba;
+            margin: 0;
+            color: black;
             font-family: sans-serif;
             text-align: center;
         }
 
-        
+        /* keep .body class for existing markup but prefer body rule above */
+        .body {
+            margin: 3;
+        }
+
        .nav-header {
             background-color:#FFFFFF;
             padding: 5px;
@@ -64,12 +69,18 @@
             background-color: transparent;
         }
 
+        /* default card style */
         .card-cell {
             background-color:#091370;
             padding: 25px;
             width: 33%;
             border: 1px solid;
             color: white;
+        }
+
+        /* specifically ensure the flat-rate service boxes use the requested color */
+        .flat-rate .card-cell {
+            background-color: #091370;
         }
 
         .watch-picture-box {
@@ -137,13 +148,12 @@
              
                
                    
-               
             
            <table class="content-table">
             <td class="card-cell">
                  <h2>customization</h2>
                 <div class="watch-picture-box">
-                    <img class="watch-img" src="https://www.breitling.com/cdn-cgi/image/format=auto,quality=90,width=780,fit=cover,gravity=0.5x0.5/api/image-proxy/www-breitling.eu.saleor.cloud/media/p[...]" alt="customization">
+                    <img class="watch-img" src="https://www.breitling.com/cdn-cgi/image/format=auto,quality=90,width=780,fit=cover,gravity=0.5x0.5/api/image-proxy/www-breitling.eu.saleor.cloud/me[...]">
 
                 </div>
              
@@ -164,7 +174,7 @@ Al Mahooz<br>
 kingdom of Bahrain<br></p></b>
     
     <h2 style="margin-top: 60px; font-size: 26px; letter-spacing: 1px;">R&R Flat-Rate Services</h2>
-    <table class="content-table">
+    <table class="content-table flat-rate">
         <tr>
             <td class="card-cell" style="border-top: 3px solid #3b82f6;">
                 <h3>Battery Swap</h3>
